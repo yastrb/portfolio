@@ -24,16 +24,13 @@ module.exports = {
         },
       },
       colors: {
-        primary: {
+        light: {
           light: "#FEE7ED", // Дуже світлий рожевий
           DEFAULT: "#E8C5CC", // Ніжний рожевий
           dark: "#CDB2B9", // Теплий рожево-коричневий
         },
-        accent: {
+        dark: {
           DEFAULT: "#A2656D", // Насичений рожево-бордовий
-        },
-        neutral: {
-          DEFAULT: "#A98B93", // Сіро-коричневий
         },
       },
     },
