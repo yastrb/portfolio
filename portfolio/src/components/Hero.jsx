@@ -1,10 +1,14 @@
 import { AuroraBackground } from "./ui/aurora-background"
+import { Boxes } from "./ui/Background-boxes"
 import { motion } from 'framer-motion'
+import { cn } from "../lib/utils";
+
 
 const Hero = () => {
   return (
     <div className='pb-20 pt-36'>
       <div className="hero relative ">
+        {/* <div className="window w-[300px] h-[300px] bg-slate-50">
         <AuroraBackground className="">
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
@@ -27,6 +31,17 @@ const Hero = () => {
             </button>
           </motion.div>
         </AuroraBackground>
+        </div> */}
+
+        <div className="window w-[300px] h-[300px] bg-slate-50">
+          <Boxes />
+          <h1 className={cn("md:text-4xl text-xl text-white relative z-20")}>
+            Tailwind is Awesome
+          </h1>
+          <p className="text-center mt-2 text-neutral-300 relative z-20">
+            Framer motion is the best animation library ngl
+          </p>
+        </div>
       </div>
     </div>
   )
