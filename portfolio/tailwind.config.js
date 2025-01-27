@@ -12,9 +12,15 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        grechen: ['"Grechen Fuemen"', 'cursive'], 
+        montserrat: ['"Montserrat Alternates"', 'sans-serif'], 
+      },
+      
       animation: {
         aurora: "aurora 60s linear infinite",
       },
+
       keyframes: {
         aurora: {
           from: {
@@ -25,12 +31,14 @@ module.exports = {
           },
         },
       },
+
       colors: {
         light: {
           light: "#FEE7ED", // Дуже світлий рожевий
           DEFAULT: "#E8C5CC", // Ніжний рожевий
           dark: "#CDB2B9", // Теплий рожево-коричневий
         },
+
         dark: {
           DEFAULT: "#A2656D", // Насичений рожево-бордовий
         },
