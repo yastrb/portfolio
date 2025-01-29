@@ -3,3 +3,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+    @apply box-border p-0 m-0;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
+  
+  body {
+    @apply bg-[#030303] text-white font-body text-[.938rem];
+  }
+  
+  input, textarea, button {
+    @apply border-none outline-none font-body text-[.938rem];
+  }
+  
+  h1, h2, h3, h4 {
+    @apply text-white font-semibold;
+  }
+  
+  ul {
+    @apply list-none;
+  }
+  
+  a {
+    @apply no-underline;
+  }
+  
+  img {
+    @apply block max-w-full h-auto;
+  }
+  
+  /* ======= Reusable CSS Classes ======= */
+  .container {
+    @apply max-w-[1168px] mx-auto px-6;
+  }
+  
+  .section {
+    @apply py-8 md:py-12;
+  }
+  
+  .section__title {
+    @apply text-[1.25rem] text-center mb-8;
+  }
+  
+  .main {
+    @apply overflow-hidden;
+  }
+  

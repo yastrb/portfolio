@@ -46,7 +46,7 @@ module.exports = {
         dark: {
           DEFAULT: "#A2656D", // Насичений рожево-бордовий
         },
-        
+
         fontSize: {
           biggest: "2.5rem",
           h1: "1.5rem",
@@ -56,6 +56,11 @@ module.exports = {
           small: ".813rem",
           smaller: ".75rem",
         },
+
+        screens: {
+          "2xl": "1168px", 
+        },
+        
       },
     },
   },
