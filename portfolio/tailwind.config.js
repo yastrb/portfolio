@@ -13,8 +13,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        grechen: ['"Grechen Fuemen"', 'cursive'], 
-        montserrat: ['"Montserrat Alternates"', 'sans-serif'], 
+        body: ['"Montserrat Alternates"', "sans-serif"],
+        second: ['"Grechen Fuemen"', "cursive"], 
       },
       
       animation: {
@@ -45,6 +45,16 @@ module.exports = {
 
         dark: {
           DEFAULT: "#A2656D", // Насичений рожево-бордовий
+        },
+        
+        fontSize: {
+          biggest: "2.5rem",
+          h1: "1.5rem",
+          h2: "1.25rem",
+          h3: "1rem",
+          normal: ".938rem",
+          small: ".813rem",
+          smaller: ".75rem",
         },
       },
     },
