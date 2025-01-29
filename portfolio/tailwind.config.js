@@ -34,9 +34,13 @@ module.exports = {
 
       colors: {
         light: {
-          light: "#FEE7ED", // Дуже світлий рожевий
-          DEFAULT: "#E8C5CC", // Ніжний рожевий
-          dark: "#CDB2B9", // Теплий рожево-коричневий
+          first: "#e61a3c", // hsl(358, 80%, 49%)
+          firstAlt: "#d61939", // hsl(358, 76%, 45%)
+          white: "#fafafa", // hsl(0, 0%, 98%)
+          black: "#030303", // hsl(0, 0%, 1%)
+          text: "#acabad", // hsl(358, 2%, 66%)
+          body: "#030303", // hsl(358, 100%, 1%) (дуже темний)
+          container: "#1a191a", // hsl(358, 2%, 10%)
         },
 
         dark: {
