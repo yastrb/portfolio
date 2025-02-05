@@ -8,6 +8,7 @@ const Hero = () => {
         <Spotlight className="top-10 left-full w-[50vw] h-[80vh]" fill='yellow'/>
         <Spotlight className="top-28 left-80 w-[50vw] h-[80vh]" fill='yellow'/>
       </div>
+      <div>grid</div>
     </div>
   )
 }
