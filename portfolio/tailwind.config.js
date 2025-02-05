@@ -6,17 +6,15 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
         body: ['"Montserrat Alternates"', "sans-serif"],
-        second: ['"Grechen Fuemen"', "cursive"], 
+        second: ['"Grechen Fuemen"', "cursive"],
       },
-      
+
       animation: {
         aurora: "aurora 60s linear infinite",
       },
@@ -33,21 +31,16 @@ module.exports = {
       },
 
       colors: {
-        light: {
-          first: "#e61a3c", // hsl(358, 80%, 49%)
-          firstAlt: "#d61939", // hsl(358, 76%, 45%)
-          white: "#fafafa", // hsl(0, 0%, 98%)
-          black: "#030303", // hsl(0, 0%, 1%)
-          text: "#acabad", // hsl(358, 2%, 66%)
-          body: "#030303", // hsl(358, 100%, 1%) (дуже темний)
-          container: "#1a191a", // hsl(358, 2%, 10%)
-        },
+        first: "#e61a3c", // hsl(358, 80%, 49%)
+        firstAlt: "#d61939", // hsl(358, 76%, 45%)
+        white: "#fafafa", // hsl(0, 0%, 98%)
+        black: "#030303",
+        text: "#acabad", // hsl(358, 2%, 66%)
+        body: "#030303", // hsl(358, 100%, 1%) (дуже темний)
+        container: "#1a191a"
+      },
 
-        dark: {
-          DEFAULT: "#A2656D", // Насичений рожево-бордовий
-        },
-
-        fontSize: {
+      fontSize: {
           biggest: "2.5rem",
           h1: "1.5rem",
           h2: "1.25rem",
@@ -55,12 +48,10 @@ module.exports = {
           normal: ".938rem",
           small: ".813rem",
           smaller: ".75rem",
-        },
+      },
 
-        screens: {
-          "2xl": "1168px", 
-        },
-        
+      screens: {
+          "2xl": "1168px",
       },
     },
   },
@@ -72,10 +63,8 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
 }
-
-
