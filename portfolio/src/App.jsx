@@ -10,6 +10,7 @@ function App() {
           { name: "Home", link: "/", icon: <FaHome /> },
         ]}/>
         <Hero />
+
       </div> 
     </main>
   )
