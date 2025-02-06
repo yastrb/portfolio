@@ -40,7 +40,7 @@
   
   /* ======= Reusable CSS Classes ======= */
   .container {
-    @apply max-w-[1168px] mx-auto px-6;
+    @apply max-w-[1168px] mx-auto px-6 my-6;
   }
   
   .section {
